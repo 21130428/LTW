@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lab4-ex4</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <textarea name="" id="area" cols="100" rows="4"></textarea><br>
+        <input id="jtf" type="text" ><br>
+        <button onclick="myFunction()">Kiểm tra</button>
+        <div id="ket_qua"></div>
+        <script>
+            function myFunction(){
+                var jtf = document.getElementById("jtf").value
+                var splitArea = document.getElementById("area").value.split(" ")
+                var listArea = []
+                var cont = 0
+                for (let index = 0; index < splitArea.length; index++) {
+                    listArea.push(splitArea[index])
+                    if(jtf == listArea[index]){
+                        cont++
+                    }
+                }
+                document.getElementById("ket_qua").innerHTML = cont
+            }
+        </script>
+    </body>
+</html>

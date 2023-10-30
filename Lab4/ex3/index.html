@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lab4-ex3</title>
+    <meta charset="utf-8">
+    <style>
+        div{text-align: center;
+            font-size: 30px;
+            padding: 100px;}
+    </style>
+</head>
+
+<body>
+    <div id="loi_chao"></div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function myFuntion() {
+            var n = Math.floor((Math.random() * 8) + 1)
+            switch (n) {
+                case 1:
+                    document.getElementById("loi_chao").innerHTML = "Xin chào các bạn!"
+                    break
+                case 2:
+                    document.getElementById("loi_chao").innerHTML = "Chúc các bạn có một buổi sáng tốt lành!"
+                    break
+                case 3:
+                    document.getElementById("loi_chao").innerHTML = "Chúc các bạn có một ngày an lành và hạnh phúc, mọi người đều có những thuận lợi trong công việc của mình!"
+                    break
+                case 4:
+                    document.getElementById("loi_chao").innerHTML = "Chúc các bạn một ngày làm việc hiệu quả, có nhiều tin vui trong công việc!"
+                    break
+                case 5:
+                    document.getElementById("loi_chao").innerHTML = "Chúc các bạn buổi sáng an lành, cả ngày có tinh thần thật tốt!"
+                    break
+                case 6:
+                    document.getElementById("loi_chao").innerHTML = "Chúc các bạn buổi sáng tốt lành, cả ngày mọi việc đều suôn sẻ!"
+                    break
+                case 7:
+                    document.getElementById("loi_chao").innerHTML = "Chúc các bạn có một ngày bình yên và vui khỏe nhé."
+                    break
+                case 8:
+                    document.getElementById("loi_chao").innerHTML = "Ngày mới vui vẻ nhé!"
+                    break
+            }
+        })
+    </script>
+</body>
+
+</html>

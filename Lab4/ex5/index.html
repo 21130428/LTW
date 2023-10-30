@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lab4-ex5</title>
+    <meta charset="utf-8">
+    <style>
+        img {
+            padding-top: 130px;
+            position: absolute;
+            height: 70%;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <img id="deg15" src="https://hinhnen4k.com/wp-content/uploads/2023/01/hinh-nen-cute-xanh-la-cay-2.jpg" alt="">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var rotatingImage = $('#deg15');
+
+            setInterval(function () {
+                var currentRotation = rotatingImage.data('rotation') || 0;
+                currentRotation += 15; // Góc xoay tăng 15 độ sau mỗi 2 giây
+                rotatingImage.data('rotation', currentRotation);
+                rotatingImage.css({
+                    transform: 'rotate(' + currentRotation + 'deg)'
+                });
+            }, 2000);
+        });
+    </script>
+</body>
+
+</html>
